@@ -1,0 +1,203 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8B0000; /* Vermelho escuro, cor de açougue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #c0392b;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #8B0000;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Grid de Produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
+}
+
+/* Card de Produto Individual */
+.produto-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+}
+
+.produto-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.produto-card h3 {
+    margin: 10px 0;
+    color: #555;
+}
+
+.produto-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.produto-card label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.produto-card input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botão Adicionar ao Carrinho */
+.add-to-cart-btn {
+    display: inline-block;
+    background-color: #c0392b; /* Vermelho mais forte */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1EAE54;
+}
+
+/* Seção do Carrinho */
+#carrinho {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 40px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+#carrinho h2 {
+    text-align: left;
+}
+
+#lista-carrinho {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-carrinho li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1em;
+}
+
+/* Seção de Contato */
+#contato {
+    text-align: center;
+}
+
+.contato-info iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.redes-sociais img {
+    margin-right: 8px;
+    width: 30px; /* Tamanho ajustado */
+    height: 30px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}

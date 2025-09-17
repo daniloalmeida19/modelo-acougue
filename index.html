@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açougue </title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Açougue do Picareta do Cris e seu Bofe Gordinho</h1>
+        <nav>
+            <a href="#carnes">Carnes Bovinas</a>
+            <a href="#frangos">Frangos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carnes">
+            <h2>Nossas Carnes</h2>
+            <div class="produtos">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Picanha" alt="Corte de Picanha">
+                    <h3>Picanha</h3>
+                    <p>Corte nobre, ideal para churrascos.</p>
+                    <label for="picanha-qtd">Quantidade (g/kg):</label>
+                    <input type="text" id="picanha-qtd" placeholder="Ex: 500g ou 1.5kg">
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Alcatra" alt="Corte de Alcatra">
+                    <h3>Alcatra</h3>
+                    <p>Carne macia para bifes e assados.</p>
+                    <label for="alcatra-qtd">Quantidade (g/kg):</label>
+                    <input type="text" id="alcatra-qtd" placeholder="Ex: 800g ou 1kg">
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                 <!-- Adicione mais produtos de carne aqui -->
+            </div>
+        </section>
+
+        <section id="frangos">
+            <h2>Nossos Frangos</h2>
+            <div class="produtos">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Frango+Inteiro" alt="Frango inteiro">
+                    <h3>Frango Inteiro</h3>
+                    <p>Frango resfriado, pronto para temperar.</p>
+                    <label for="frango-qtd">Quantidade (un):</label>
+                    <input type="number" id="frango-qtd" placeholder="Ex: 1" min="1">
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Filé+de+Peito" alt="Filé de peito de frango">
+                    <h3>Filé de Peito</h3>
+                    <p>Filés de peito de frango em bandeja.</p>
+                    <label for="file-peito-qtd">Quantidade (g/kg):</label>
+                    <input type="text" id="file-peito-qtd" placeholder="Ex: 500g ou 1kg">
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Adicione mais produtos de frango aqui -->
+            </div>
+        </section>
+
+        <section id="carrinho">
+            <h2>Meu Carrinho de Compras</h2>
+            <ul id="lista-carrinho">
+                <!-- Itens do carrinho aparecerão aqui -->
+            </ul>
+            <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+            <a id="finalizar-pedido-btn" class="whatsapp-btn" style="display: none;">Finalizar Pedido via WhatsApp</a>
+        </section>
+
+        <section id="contato">
+            <h2>Onde nos encontrar</h2>
+            <div class="contato-info">
+                <!-- Iframe para o Google Maps -->
+                <p>Venha nos visitar no nosso endereço!</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.240693213518!2d-46.65882238554267!3d-23.55919776749749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a2f%3A0x6a6b5c0d2a4a3e9a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678886512345!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="redes-sociais">
+                    <h3>Siga-nos e faça seu pedido!</h3>
+                    <a href="https://instagram.com/SEUINSTAGRAM" target="_blank">
+                        <img src="https://via.placeholder.com/40x40.png?text=Insta" alt="Instagram">
+                        @SEUINSTAGRAM
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=SEUNUMERO" target="_blank">
+                        <img src="https://via.placeholder.com/40x40.png?text=Wpp" alt="WhatsApp">
+                        (XX) XXXXX-XXXX
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Açougue do Bairro. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Arquivo JavaScript para a lógica do carrinho -->
+    <script src="carrinho.js"></script>
+</body>
+</html>
